@@ -29,13 +29,6 @@ const LoginScreen = ({ location, history }) => {
     dispatch(login(email, password))
   }
 
-  const test = [{ size: 1, qty: 6 }, { size: 2, qty: 5 }]
-  const [testArr, setTestArr] = useState(test)
-  const newArr = { size: 3, qty: 4 }
-  const onClick = () => {
-    setTestArr(testArr => [...testArr, newArr])
-  }
-  console.log(testArr)
 
   return (
     <div>
@@ -47,8 +40,6 @@ const LoginScreen = ({ location, history }) => {
             </div>
             <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1 justify-content-center">
               <h1>Sign In</h1>
-              <button onClick={onClick} className="btn btn-primary btn-lg" style={{ padding: '15px 180px' }}>test</button>
-
               {error && <Message variant='danger'>{error}</Message>}
               {loading && <Loader />}
 

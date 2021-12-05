@@ -125,7 +125,7 @@ export const adUpdateUser = (user) => async (dispatch, getState) => {
         })
 
         const { userLogin: { userInfo } } = getState()
-        console.log(userInfo.token)
+
         const config = {
             headers: {
                 'Content-Type': 'application/json',

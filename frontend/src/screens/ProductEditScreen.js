@@ -106,7 +106,7 @@ const ProductEditScreen = ({ match, history }) => {
       adUpdateProduct({ _id: productId, name, price, image, brand, category, description, allSize })
     )
   }
-  //console.log(allSize)
+
   return (
     <>
       <Link to='/admin/products' className='btn btn-light my-3'>
